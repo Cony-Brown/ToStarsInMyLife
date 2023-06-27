@@ -13,11 +13,16 @@ html{
 	z-index: 1001;
 }
 .audio {
-	display: none;
+	position: absolute;
+	left: 12%;
+	bottom: 5%;
 }
 .lyrics-container {
-  height: 800px; /* 设置容器高度 */
-  overflow: hidden; /* 隐藏超出容器高度的内容 */
+	height: 80%;
+	overflow: hidden;
+	position: absolute;
+	left: 10%;
+	top: 30px;
 }
 
 .lyrics {
