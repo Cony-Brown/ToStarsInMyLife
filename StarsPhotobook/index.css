@@ -12,6 +12,39 @@ html{
 	position: relative;
 	z-index: 1001;
 }
+.audio {
+	display: none;
+}
+.lyrics-container {
+  height: 800px; /* 设置容器高度 */
+  overflow: hidden; /* 隐藏超出容器高度的内容 */
+}
+
+.lyrics {
+  position: relative; /* 设置相对定位 */
+  top: 0; /* 初始位置为0 */
+  animation: scroll 84s linear infinite; /* 设置动画 */
+}
+
+@keyframes scroll {
+  0% {
+    top: 50%; /* 初始位置为0 */
+  }
+  100% {
+    top: -100%; /* 移动到最上方 */
+  }
+}
+
+.lyrics p {
+  margin: 0; /* 去除段落的默认边距 */
+  line-height: 1.5; /* 设置行高 */
+  text-align: center; /* 居中对齐 */
+  padding: 10px 0; /* 设置上下内边距 */
+	font-size: 18px;
+	color: #a233c694;
+	font-weight: 600;
+}
+
 .cube{
 	width:600px;
 	height:400px;

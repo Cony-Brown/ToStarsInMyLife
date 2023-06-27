@@ -15,7 +15,7 @@ body {
 
 .stage {
   position: relative;
-  min-height: 80vh;
+  min-height: 40vh;
   width: 800px;
   margin: auto;
 }
@@ -1712,21 +1712,33 @@ body {
 }
 
 .footer {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
+  text-align: center;
+  margin: auto;
   color: #ea4c89;
   text-decoration: none;
   text-align: left;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 25px;
+  width: 1200px;
+  margin-top: 200px;
+}
+.center {
+  text-align: center;
+  margin: auto;
+  color: #ea4c89;
+  text-decoration: none;
+  text-align: left;
+  font-weight: bold;
+  font-size: 25px;
+  width: 400px;
+  margin-top: 50px;
 }
 .footer span {
-  font-size: 12px;
+  font-size: 25px;
 }
 .footer a {
   font-weight: bold;
-  font-size: 10px;
+  font-size: 25px;
   color: #ea4c89;
   text-decoration: underline;
 }

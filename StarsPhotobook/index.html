@@ -6,10 +6,74 @@
 	<title>my stars</title>
 	<link href="./index.css" rel="stylesheet" type="text/css">
 	<link href="./bear.css" rel="stylesheet" type="text/css">
+	<!-- 引入 layui.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/layui/2.8.8/css/layui.css" integrity="sha512-i0z3bjxCkuX0RBCJ0MD1SnLdE2wOutQc8Jg7f0nwD147c0Z3bJ3LdJ9TRnfh4GKmmyZ3h594rFK7iRRD+/gx8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+	<!-- 引入 layui.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/layui/2.8.8/layui.js" integrity="sha512-tQC4F8lHFB2IAdzFd0zE4ogMgnco1nJG3hgt26H/ZPysSBR8SGRkNi+T/ah7SerkrstEanqzmJf3mXlVdkqRJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<div class="main">
+		<audio id='audio' class="audio" src="./music.mp3" autoplay="autoplay" controls="controls"loop="loop" preload="auto"></audio>
+		<div class="lyrics-container">
+			<div class="lyrics">
+				<p>you are my sunshine, my only sunshine,</p>             
+
+				<p>你是我的阳光，我唯一的阳光</p> 
+				
+				<p>you make me happy, when skies are gray.</p>      
+				
+				<p>你让我感到开心，当天空黑暗的时候</p> 
+				
+				<p>you'll never know dear,how much i love you,</p> 
+				
+				<p>你永远不会知道，我有多爱你</p> 
+				
+				<p>please don't take my sunshine away.</p>                        
+				
+				<p>请不要把我的阳光带走</p> 
+				
+				<p>you'll never know dear, how much i love you,</p> 
+				
+				<p>你永远不会知道，我有多爱你</p> 
+				
+				<p>please don't take my sunshine away.</p>                       
+				
+				<p>请不要把我的阳光带走</p> 
+				
+				<p>I'll always love you and make you happy,</p> 
+				
+				<p>我会一直爱你，让你快乐</p> 
+				
+				<p>If you will only say the same.</p>                                    
+				
+				<p>如果你的言语一贯如一</p> 
+				
+				<p>But if you leave me and love another,</p>                 
+				
+				<p>可是若你离开了我，爱上了他人</p> 
+				
+				<p>You'll regret it  all some day</p>                              
+				
+				<p>你就会懊悔所有那些一起的时光</p> 
+				
+				<p>you are my sunshine, my only sunshine,</p>            
+				
+				<p>你是我的阳光，我唯一的阳光</p> 
+				
+				<p>you make me happy, when skies are gray.</p>     
+				
+				<p>你让我感到开心，当天空黑暗的时候</p> 
+				
+				<p>you'll never know dear, how much i love you,</p>      
+				
+				<p>你永远不会知道，我有多爱你</p> 
+				
+				<p>please don't take my sunshine away.</p>                      
+				
+				<p>请不要把我的阳光带走</p> 
+			</div>
+		</div>
 		<div class="wrap">
 			<div class="cube">
 				<div class="out_front">
@@ -75,6 +139,14 @@
 			</div>
 		</div>
 	</div>
+	<script>
+		var audio = document.getElementById("audio");
+		// 在此处输入 layer 的任意代码
+		layer.alert('小仙女🧚‍♀️，你又来啦～', {icon: 6, title: '欧吼～', btn: ['甚是想念']}, function(index){
+			layer.close(index);
+			audio.play();
+		});
+	</script>
 </body>
 
 </html>
